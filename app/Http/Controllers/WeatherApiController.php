@@ -19,6 +19,9 @@ class WeatherApiController extends Controller
                 'name' => $data['location']['name'],
                 'country' => $data['location']['country'],
                 'localtime' => $data['location']['localtime'],
+                'last_updated' => $data['current']['last_updated'],
+                'condition' => $data['current']['condition']['text'],
+                // 'condition' => $data['current']['text'],
             ];
         
         }else{
