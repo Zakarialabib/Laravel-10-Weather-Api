@@ -18,8 +18,9 @@
         
             <div class="max-w-7xl mx-auto p-6 lg:p-8">
                 <div class="flex justify-center">
-                    <h1 class="text-bold text-white text-5xl">
-                        weather api - {{ $datas['name'] }}
+                    <h1 class="text-bold text-white text-5xl uppercase px-4">
+                        weather api <br>
+                         {{ $datas['name'] }}
                     </h1>
                     <div class="w-64 cursor-pointer border b-gray-400 rounded flex flex-col justify-center items-center text-center p-6 bg-white">
                         <div class="text-md font-bold flex flex-col text-gray-900"><span class="uppercase">
@@ -39,8 +40,8 @@
                               </g>
                           </svg>
                         </div>
-                        <p class="text-gray-700 mb-2">Partly cloud</p>
-                        <div class="text-3xl font-bold text-gray-900 mb-6">32º<span class="font-normal text-gray-700 mx-1">/</span>20º</div>
+                        <p class="text-gray-700 mb-2">{{ $datas['condition'] }}</p>
+                        <div class="text-3xl font-bold text-gray-900 mb-6">{{ $datas['feelslike_c'] }}º<span class="font-normal text-gray-700 mx-1">/</span>{{ $datas['feelslike_c'] }}º</div>
                         <div class="flex justify-between w-full">
                           <div class="flex items-center text-gray-700 px-2">
                             <svg class="mr-2 h-4" viewBox="0 0 11 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
